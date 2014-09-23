@@ -1,0 +1,12 @@
+  # cat=basic; type=string; label=Strip params. Strip these parameters if they are present in the query-string (Separate with spaces)
+strip_params = no_cache
+
+  # cat=basic; type=boolean; label=Logged in skip. Skip redirect if logged in. Check this if you do not want to redirect users that are logged in into the backend.
+skip_if_logged_in = 1
+
+  # cat=basic; type=boolean; label=No cache skip. Check this if you do not want to get redirects when no_cache is on. This is typically a development setting. This will take precedence over strip_params.
+skip_if_no_cache = 0
+
+  # cat=basic; type=boolean; label=typeNum skip. Check this if you do not want to get redirects for non-0 typeNum. This is often used if you are doing some sort of AJAX specific pages.
+skip_if_typeNum = 1
+
